@@ -1,5 +1,9 @@
 # AGENT INSTRUCTIONS (STRICT)
 
+**📋 Task Management:**
+Before starting work, ALWAYS read `TASKS.md` to see what is pending. 
+If you complete a task, mark it with `[x]` in your commit.
+
 ## 🎯 Current Mission: Phase 1 - Reproduce the Problem
 **Goal:** Quantify the "Domain Shift Degradation" of a static ResNet-50 model.
 **Success Metric:** Generate a report showing the accuracy drop between "Sunny" (Source Domain) and "Rain/Night" (Target Domains).
