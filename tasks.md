@@ -39,3 +39,5 @@
 | Sunny  | 4.1044  | CONFUSED (Expected) |
 | Rain   | 1.6730  | CONFUSED |
 | Night  | 0.1744  | Confident (False Positive) |
+- [ ] **Task 1.5:** Generate Visualization & LaTeX Report.
+    - *Action:* Create `report/reproducer.py` and `report/gen_latex.py`.
