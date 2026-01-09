@@ -22,3 +22,4 @@ We hypothesize that standard models fail in non-stationary environments. We need
 ## Project Change Log
 (Do not edit below this line manually. The system updates this automatically.)
 -------------------------------------------------------------------------------
+- **[2026-01-09 05:06] Sumanth Gopisetty:** ci: Add auto-scribe workflow to track history
