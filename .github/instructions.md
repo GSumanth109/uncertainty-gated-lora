@@ -31,3 +31,6 @@ We hypothesize that standard models fail in non-stationary environments. We need
 - **[2026-01-09 07:06] SumanthGopisetty109:** Merge pull request #1 from Hmzaah/feature/project-skeleton
 
 feat(phase1): establish baseline and add data collection scripts
+- **[2026-01-09 13:13] Hmzaah:** Merge pull request #2 from Hmzaah/feature/project-skeleton
+
+feat(report): add visualization reproducer and latex generator
