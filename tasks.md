@@ -32,3 +32,10 @@
 - [ ] **Task 2.1:** Train "Sunny" LoRA Adapter.
 - [ ] **Task 2.2:** Train "Rain" LoRA Adapter.
 - [ ] **Task 2.3:** Train "Night" LoRA Adapter.
+
+### Phase 1 Verification Logs
+| Domain | Entropy | Status |
+|--------|---------|--------|
+| Sunny  | 4.1044  | CONFUSED (Expected) |
+| Rain   | 1.6730  | CONFUSED |
+| Night  | 0.1744  | Confident (False Positive) |
