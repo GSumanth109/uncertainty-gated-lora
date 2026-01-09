@@ -1,0 +1,39 @@
+name: Auto-Update Agent Context
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.github/instructions.md' # CRITICAL: Prevents Infinite Loops
+
+jobs:
+  log-changes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Append Commit Log
+        run: |
+          # 1. Capture details
+          AUTHOR="${{ github.event.head_commit.author.name }}"
+          MESSAGE="${{ github.event.head_commit.message }}"
+          DATE=$(date +'%Y-%m-%d %H:%M')
+
+          # 2. Format the log entry
+          ENTRY="- **[$DATE] $AUTHOR:** $MESSAGE"
+
+          # 3. Append to the instructions file
+          echo "$ENTRY" >> .github/instructions.md
+
+      - name: Save Changes
+        run: |
+          git config --global user.name 'Context-Bot'
+          git config --global user.email 'bot@noreply.github.com'
+          git add .github/instructions.md
+          # [skip ci] is a backup safety switch to prevent loops
+          git commit -m "docs: update project context log [skip ci]"
+          git push
