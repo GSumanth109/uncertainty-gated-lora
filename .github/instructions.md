@@ -58,3 +58,4 @@ feat(phase1): establish baseline and add data collection scripts
 - **[2026-01-09 13:13] Hmzaah:** Merge pull request #2 from Hmzaah/feature/project-skeleton
 
 feat(report): add visualization reproducer and latex generator
+- **[2026-01-11 05:11] Sumanth Gopisetty:** feat: Enforce modular framework and add PerformanceMonitor
